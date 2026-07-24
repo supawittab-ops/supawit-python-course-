@@ -1,0 +1,5 @@
+print("\nLoop ผ่าน string: ")
+name = "python"
+for letter in name :
+    print(f"ตัวอักษร : {letter}")
+    
