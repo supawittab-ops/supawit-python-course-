@@ -22,3 +22,22 @@ class Rectangle:
 rect = Rectangle(10, 5)
 print(rect.get_area())       # Should print 50
 print(rect.get_perimeter())  # Should print 30
+"""
+ขอให้เขียนคลาส circle ที่คล้ายคลึงกับ Rectangle
+"""
+class Circle:
+    def __init__(self, redius):
+        self.redius = redius
+        
+
+    # Method to get the area
+    def get_area(self):
+        return 3.14 * self.redius ** 2
+
+    # Method to get the perimeter
+    def get_perimeter(self):
+        return f"Perimeter = 2 * 3.14 * {self.redius} = {2 * 3.14 * self.redius}" 
+
+myCircle = Circle(10)
+print(myCircle.get_area())
+print(myCircle.get_perimeter())
